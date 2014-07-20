@@ -1,0 +1,65 @@
+/* main css code here */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif, Helvetica, Arial;
+    color: darkolivegreen;
+}
+
+header {
+    background-color: darkolivegreen;
+    height: 35px;
+    width: 100%;
+    opacity: .9;
+    margin-bottom: 10px;
+}
+
+header h1.logo {
+    margin: 0;
+    font-size: 1.5em;
+    float: left;
+    color: #ffffff;
+}
+
+/* center the main body */
+.main_body {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* display header navigation links inline */
+
+.navigation {
+    float: right;
+    margin-top: 8px;
+}
+
+.navigation li {
+    display: inline;
+}
+
+.navigation li + li {
+    margin-left: 30px;
+}
+
+.navigation li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* content */
+div.main_content {
+    padding: 10px 5px 30px 5px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background-color: lightgray;
+}
+
+/* place footer at bottom */
+footer {
+    position: absolute;
+    bottom: 20px;
+    padding-left: 10px;
+}

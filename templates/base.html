@@ -1,9 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Development Profile</title>
+    <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
 </head>
 <body>
+<!-- Header -->
+ <header>
+     <div class="main_body">
+         <h1 class="logo">Jadant</h1>
+         <strong><nav>
+             <ul class="navigation">
+                 <li><a href="{{url_for('home')}}">Home</a></li>
+                 <li><a href="{{url_for('about')}}">About</a></li>
+                 <li><a href="{{url_for('news')}}">News</a></li>
+             </ul>
+         </nav></strong>
+     </div>
+ </header>
+<!-- Main content -->
+ <div class="main_body">
+    {% block content %}
+
+    {% endblock %}
+ </div>
+
+<!-- Footer -->
+ <footer class="main_body">
+    {% block footer %}
+    &copy Jadant Productions {{ current_year|get_current_year }}
+    {% endblock %}
+ </footer>
+
 
 </body>
 </html>

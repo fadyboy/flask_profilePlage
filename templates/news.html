@@ -1,9 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-
-</body>
-</html>
+{% extends 'base.html' %}
+{% block content %}
+ <div class="main_content">
+    <p>
+        Links to major news sites
+    </p>
+    <h3><a href="{{ cnn }}" target="_blank">CNN</a></h3>
+    <h3><a href="{{ bbc }}" target="_blank">BBC</a></h3>
+ </div>
+{% endblock %}
