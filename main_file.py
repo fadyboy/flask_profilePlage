@@ -23,11 +23,11 @@ def about():
 @app.route('/news')
 def news():
     # create dictionary to hold links to news sites
-    new_sites = {}
-    new_sites['cnn'] = ("http://www.cnn.com")
-    new_sites['bbc'] = ("http://www.bbc.co.uk")
+    blog_sites = {}
+    blog_sites['Miguel'] = ("http://blog.miguelgrinberg.com/")
+    blog_sites['Love_python'] = ("http://love-python.blogspot.co.uk/")
 
-    return render_template('news.html', cnn=new_sites['cnn'], bbc=new_sites['bbc'])
+    return render_template('news.html', miguel=blog_sites['Miguel'], love_python=blog_sites['Love_python'])
 
 # create filter for current year
 @app.template_filter()
